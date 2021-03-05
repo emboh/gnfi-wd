@@ -10,3 +10,5 @@ run these commands and step:
 - composer install
 - php artisan migrate:refresh
 - php artisan db:seed
+- login admin : admin@example.com | password
+- login member : member@example.com | password
