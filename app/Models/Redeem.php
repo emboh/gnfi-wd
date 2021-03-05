@@ -51,4 +51,16 @@ class Redeem extends Model
     {
         return $this->belongsTo(Reward::class);
     }
+
+    /**
+     * Perform any actions required after the model boots.
+     *
+     * @return void
+     */
+    protected static function booted()
+    {
+        static::updated(function ($model) {
+            // TODO : adjust user points
+        });
+    }
 }
