@@ -23,7 +23,8 @@
 
                     <x-auth-validation-errors class="mb-4" :errors="$errors" />
 
-                    <form method="POST" action="{{ route('admin.redeems.store') }}">
+                    <form method="POST" action="{{ route('admin.redeems.update', ['redeem' => $redeem]) }}">
+                        @method('PATCH')
                         @csrf
 
                         <div>
